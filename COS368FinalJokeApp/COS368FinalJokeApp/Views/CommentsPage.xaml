@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="COS368FinalJokeApp.CommentsPage">
+
+    <NavigationPage.TitleView>
+        <Label x:Name="Title" Text="Comments" TextColor="White" FontSize="40" HorizontalTextAlignment="Center" Padding="0, 0, 60, 0">
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="iOS" Value="Jokerman" />
+                    <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>
+    </NavigationPage.TitleView>
+   
+    <ContentPage.Content>
+        <StackLayout Padding="10, 20, 10, 0">
+            <StackLayout Margin="-20, -15, -20, 0">
+                <BoxView HeightRequest="1" Color="White"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="User" TextColor="White" FontAttributes="Bold" Padding="5" />
+                <Label x:Name="Comment" Text="HAHA!" TextColor="White" Padding="5" HorizontalTextAlignment="Start" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label  x:Name="User1" Text="JKay:" TextColor="White" FontAttributes="Bold" Padding="5" />
+                <Label x:Name="Comment1" Text="@bailey131 relax it wasn't that funny.." TextColor="White" Padding="5" HorizontalTextAlignment="Start" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label  x:Name="User2" Text="MemeKing:" TextColor="White" FontAttributes="Bold" Padding="5" />
+                <Label x:Name="Comment2" Text="Trash meme, mine are way better." TextColor="White" Padding="5" HorizontalTextAlignment="Start" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label  x:Name="User3" Text="f0rtniteR0x:" TextColor="White" FontAttributes="Bold" Padding="5" />
+                <Label x:Name="Comment3" Text="post more fortnite pls" TextColor="White" Padding="5" HorizontalTextAlignment="Start" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label  x:Name="User4" Text="trump2020bruda:" TextColor="White" FontAttributes="Bold" Padding="5" />
+                <Label x:Name="Comment4" Text="I think this is what we need in life" TextColor="White" Padding="5" HorizontalTextAlignment="Start" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label  x:Name="User5" Text="jonnnn:" TextColor="White" FontAttributes="Bold" Padding="5" />
+                <Label x:Name="Comment5" Text="where tf is my stimulus check @trump2020bruda" TextColor="White" Padding="5" HorizontalTextAlignment="Start" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label  x:Name="User6" Text="karensAreCute:" TextColor="White" FontAttributes="Bold" Padding="5" />
+                <Label x:Name="Comment6" Text="this is so funny" TextColor="White" Padding="5" HorizontalTextAlignment="Start" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

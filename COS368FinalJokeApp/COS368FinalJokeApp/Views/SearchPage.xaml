@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="COS368FinalJokeApp.SearchPage"
+             Appearing="OnAppearing">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20, 10, 20, 10" Orientation="Vertical" Spacing="10">
+            <Label Text="Search  Jokes" TextColor="White" FontSize="40" HorizontalOptions="Center" Margin="0, -10, 0, 0">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Jokerman" />
+                        <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            <StackLayout Margin="-20, -5, -20, 0">
+                <BoxView HeightRequest="1" Color="White"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical">
+                <Button Text="🔍Search" Clicked="OnSearchClicked" TextColor="white" CornerRadius="40" BorderWidth="4" BorderColor="White" BackgroundColor="Transparent" HeightRequest="65"/>
+            </StackLayout>
+            <StackLayout Padding="10, 0, 10, 0">
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="58, 0, 45, -5">
+                    <Label Text="Sports" TextColor="White" FontSize="15" HorizontalOptions="Start"/>
+                    <Label Text="Dad Jokes" TextColor="White" FontSize="15" HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="30" >
+                    <ImageButton Source="sports.png" WidthRequest="122" HeightRequest="122" CornerRadius="120" BorderWidth="3" BorderColor="White" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" Clicked="OnSportsClicked"/>
+                    <ImageButton Source="dad.png" WidthRequest="122" HeightRequest="122" CornerRadius="120" BorderWidth="3" BorderColor="White" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" Clicked="OnDadJokesClicked"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="58, 0, 52, -5">
+                    <Label Text="Fornite" TextColor="White" FontSize="15" HorizontalOptions="Start"/>
+                    <Label Text="Covid-19" TextColor="White" FontSize="15" HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="30">
+                    <ImageButton Source="fortnite.png" WidthRequest="122" HeightRequest="122" CornerRadius="120" BorderWidth="3" BorderColor="White" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" Clicked="OnFortniteClicked"/>
+                    <ImageButton Source="covid19.png" WidthRequest="122" HeightRequest="122" CornerRadius="120" BorderWidth="3" BorderColor="White" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" Clicked="OnCovid19Clicked"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" Margin="58, 0, 50, -5">
+                    <Label Text="Politics" TextColor="White" FontSize="15" HorizontalOptions="Start"/>
+                    <Label Text="Tiger King" TextColor="White" FontSize="15" HorizontalOptions="EndAndExpand"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="30">
+                    <ImageButton Source="politics.png" WidthRequest="122" HeightRequest="122" CornerRadius="120" BorderWidth="3" BorderColor="White" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" Clicked="OnPoliticsClicked"/>
+                    <ImageButton Source="tigerking.png" WidthRequest="122" HeightRequest="122" CornerRadius="120" BorderWidth="3" BorderColor="White" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand" Clicked="OnTigerKingClicked"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="COS368FinalJokeApp.SearchResultPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand">
+            <SearchBar x:Name="SearchBar" Placeholder="Search for jokes" PlaceholderColor="White" TextColor="White" Unfocused="OnUnfocused"/>
+            <ScrollView>
+                <StackLayout Padding="20, 0, 0, 0">
+                    <Label x:Name="Label" Text="" TextColor="White"/>
+                    <Label x:Name="Label1" Text="" TextColor="White"/>
+                    <Label x:Name="Label2" Text="" TextColor="White"/>
+                    <Label x:Name="Label3" Text="" TextColor="White"/>
+                    <Label x:Name="Label4" Text="" TextColor="White"/>
+                    <Label x:Name="Label5" Text="" TextColor="White"/>
+                    <Label x:Name="Label6" Text="" TextColor="White"/>
+                    <Label x:Name="Label7" Text="" TextColor="White"/>
+                    <Label x:Name="Label8" Text="" TextColor="White"/>
+                    <Label x:Name="Label9" Text="" TextColor="White"/>
+                    <Label x:Name="Label10" Text="" TextColor="White"/>
+                    <Label x:Name="Label11" Text="" TextColor="White"/>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

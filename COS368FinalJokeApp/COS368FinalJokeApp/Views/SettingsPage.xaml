@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="COS368FinalJokeApp.SettingsPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Settings" TextColor="White" FontSize="50" Padding="10" HorizontalOptions="Center"  Margin="0, -20, 0, 0">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Jokerman" />
+                        <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            <StackLayout Margin="-20, -15, -20, 0">
+                <BoxView HeightRequest="1" Color="White"/>
+            </StackLayout>
+            <TableView Intent="Settings" HasUnevenRows="True" Margin="10">
+                <TableRoot>
+                    <TableSection>
+                        <ViewCell>
+                            <StackLayout Orientation ="Horizontal" >
+                                <Label Text="Notifications" HorizontalOptions="StartAndExpand" FontSize="50" TextColor="White">
+                                    <Label.FontFamily>
+                                        <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="iOS" Value="Jokerman" />
+                                            <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                                        </OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                                <Switch HorizontalOptions="End" Toggled="OnNotificationsToggled" IsToggled="{Binding State}"/>
+                            </StackLayout>
+                        </ViewCell >
+                        <ViewCell x:Name="LanguageCell" Tapped="OnLangTapped">
+                            <Label Text= "Language >" FontSize="50" TextColor="White">
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Jokerman" />
+                                        <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+                        </ViewCell>
+                        <ViewCell x:Name="PrivacyCell" Tapped="OnPrivTapped">
+                            <Label Text= "Privacy >" FontSize="50" TextColor="White">
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Jokerman" />
+                                        <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+                        </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation ="Horizontal" >
+                                <Label Text="Dark Mode" HorizontalOptions="StartAndExpand" FontSize="50" TextColor="White">
+                                    <Label.FontFamily>
+                                        <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="iOS" Value="Jokerman" />
+                                            <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                                        </OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                                <Switch HorizontalOptions="End" Toggled="OnDarkmodeToggled" />
+                            </StackLayout>
+                        </ViewCell >
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            <Frame BackgroundColor="Crimson" Margin="70, 20, 70, 10" CornerRadius="60">
+                <Label Text="Log Out" TextColor="White" FontSize="50" Margin="0, -20, 0, -20" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnLogoutTapped"/>
+                    </Label.GestureRecognizers>
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Jokerman" />
+                            <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+            </Frame>
+            <Label Text="Username: BigChungusFTW" TextColor="White" FontSize="20" Padding="10" HorizontalOptions="Center">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Jokerman" />
+                        <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

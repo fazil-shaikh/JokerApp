@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="COS368FinalJokeApp.UploadPage"
+             Appearing="OnAppearing">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20, 10, 20, 10" Orientation="Vertical">
+            <Label Text="Upload a Joke" TextColor="White" FontSize="40" HorizontalOptions="Center"  Margin="0, -10, 0, 0">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Jokerman" />
+                        <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            <StackLayout Margin="-20, 0, -20, 0">
+                <BoxView HeightRequest="1" Color="White"/>
+            </StackLayout>
+            <Frame BorderColor="White" CornerRadius="20" BackgroundColor="Transparent" Margin="0, 10, 0, 0" Padding="0, -30, 0, -30">
+                <Image Source="icon_uploadphoto" Scale="0.7">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnUploadTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Frame>
+            <Label Text="File Is :" x:Name="lbl" Padding="5" FontSize="20" TextColor="White"/>
+            <Frame OutlineColor="White" CornerRadius="30" BackgroundColor="Transparent">
+                <Entry Placeholder="Tags: Dad Jokes, Etc"/>
+            </Frame>
+            <Frame BackgroundColor="Crimson" Margin="70, 20, 70, 50" CornerRadius="60">
+                <Label Text="Submit" TextColor="White" FontSize="40" Margin="0, -20, 0, -20" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnSubmitTapped"/>
+                    </Label.GestureRecognizers>
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Jokerman" />
+                            <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
