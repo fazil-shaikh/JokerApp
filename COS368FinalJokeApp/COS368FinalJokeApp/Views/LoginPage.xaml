@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="COS368FinalJokeApp.LoginPage">
+
+    <ContentPage.Content>
+        <StackLayout Padding="30">
+            <Label Text="Joker" TextColor="White" FontSize="70" Padding="10" HorizontalOptions="Center">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Jokerman" />
+                        <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            <Frame OutlineColor="White" CornerRadius="30" BackgroundColor="Transparent">
+                <StackLayout>
+                    <Entry Placeholder="Username" PlaceholderColor="White" TextColor="white"/>
+                    <Entry Placeholder="Password" PlaceholderColor="White" TextColor="white" IsPassword="true"/>
+                </StackLayout>
+            </Frame>
+            <Label Text="Forgot Password?" TextColor="White" FontSize="30" Padding="0, 10, 0, 0" HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnForgotTapped"/>
+                </Label.GestureRecognizers>
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Jokerman" />
+                        <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            <Frame BackgroundColor="Crimson" Margin="70, 50, 70, 0" CornerRadius="60">
+                <Label Text="Log In" TextColor="White" FontSize="50" Margin="0, -20, 0, -20" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnLoginTapped"/>
+                    </Label.GestureRecognizers>
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Jokerman" />
+                            <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

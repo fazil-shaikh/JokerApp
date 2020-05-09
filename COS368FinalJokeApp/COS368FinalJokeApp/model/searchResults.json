@@ -1,0 +1,56 @@
+{
+  "searches":{
+    "d": {
+      "1": "Dad jokes",
+      "2": "Dark Jokes",
+      "3": "David Beckham",
+      "4": "David Hasselhoff",
+      "5": "Debate",
+      "6": "Deepsea fishing",
+      "7": "Disco",
+      "8": "Doom",
+      "9": "Drake",
+      "10": "Dumb jokes",
+      "11": "Dumb dad jokes"
+    },
+    "da": {
+      "1": "Dad jokes",
+      "2": "Dad jokes in french",
+      "3": "Dad jokes in Spanish",
+      "4": "Damsel",
+      "5": "Dancing",
+      "6": "Dark Jokes",
+      "7": "Dark alley",
+      "8": "David Beckham",
+      "9": "David Hasselhoff",
+      "10": "28 Days Later",
+      "11": "Daylight savings time"
+    },
+    "dad":{
+      "1": "Bad dad jokes",
+      "2": "Extreme dad jokes",
+      "3": "Dad jokes bbq",
+      "4": "Dad jokes gone wrong",
+      "5": "Dad jokes in french",
+      "6": "Dad jokes in spanish",
+      "7": "Dark dad jokes",
+      "8": "dumb dad jokes",
+      "9": "Funny dad jokes",
+      "10": "Political dad jokes",
+      "11": "Silly dad jokes"
+    },
+    "dadjokes": {
+      "1": "Bad dad jokes",
+      "2": "Extreme dad jokes",
+      "3": "Dad jokes bbq", 
+      "4": "Dad jokes gone wrong",
+      "5": "Dad jokes in french",
+      "6": "Dad jokes in spanish",
+      "7": "Dark dad jokes",
+      "8": "dumb dad jokes",
+      "9": "Funny dad jokes",
+      "10": "Political dad jokes",
+      "11": "Silly dad jokes"
+    }
+  }
+}

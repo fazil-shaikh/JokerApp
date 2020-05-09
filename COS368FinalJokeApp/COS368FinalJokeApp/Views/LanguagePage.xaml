@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="COS368FinalJokeApp.LanguagePage">
+
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" Padding="10">
+            <Picker x:Name="LangPicker" SelectedIndex="1" TextColor="White" FontSize="30">
+                <Picker.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Jokerman" />
+                        <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                    </OnPlatform>
+
+                </Picker.FontFamily>
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Arabic (العربية)</x:String>
+                        <x:String>English</x:String>
+                        <x:String>Hindustani (हिन्दी)</x:String>
+                        <x:String>Mandarin Chinese (普通话, 汉语, 国语, 华语)</x:String>
+                        <x:String>Spanish (Español)</x:String>
+                        
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
